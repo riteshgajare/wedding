@@ -11,11 +11,13 @@
 <link rel="stylesheet" href="bulma.css">
 <link rel="stylesheet" href="slider.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Satisfy">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
 <link rel="manifest" href="manifest.json">
 <link rel="mask-icon" href="safari-pinned-tab.svg" color="#b91d47">
+<!-- <link href="https://rawgithub.com/nternetinspired/debug-css/master/debug.css" media="all" rel="stylesheet" type="text/css" /> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="jquery.plugin.min.js"></script>
 <script src="jquery.countdown.min.js"></script>
@@ -26,19 +28,22 @@
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial;
-  font-size: 17px;
+
+
+.heart-main {
+  animation: pounding .5s linear infinite alternate;
+  color: #F62D46;
 }
 
-#myVideo {
-  position: auto;s
-  right: 0;
-  bottom: 0;
-  min-width: 100%; 
-  min-height: 100%;
+@keyframes pounding {
+  0% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
+
 
 .content {
   position: fixed;
@@ -213,7 +218,7 @@ $(document).ready(function() {
 				}
 			},
 			"color": {
-				"value": "#00D2B3"
+				"value": "#764433"
 			},
 			"shape": {
 				"type": "circle",
@@ -325,13 +330,20 @@ $(document).ready(function() {
 			</a>
 		</div>
 	</section>
-	<section class="hero is-primary is-bold is-fullheight" id="details" style="position: relative;">
+	<section class="hero is-warning is-bold is-fullheight" id="details" style="position: relative;">
 		<div id="particles" style="position: absolute; width: 100%; height: 100%; z-index: 0; max-height: 100vh;"></div>
 		<div class="hero-body">
 			<div class="container has-text-centered">
 				<h1 class="title is-1" style="font-family: 'Satisfy', cursive; font-size: 5rem;">
-					Our big day
+					Our big day of Shaadi
 				</h1>
+				<div class="columns is-centered">
+					<div class="column is-5 is-7-desktop">
+						<p class="subtitle is-5">It is the main event in the entire wedding when the we tie the knot. 
+							The groom comes with the barat and is greeted by the bride side with some dhol. 
+							This is when the couple circle the sacred fire and are finally declared husband and wife.</br></p>
+					</div>
+				</div>
 				<div class="columns is-centered">
 					<div class="column is-5 is-4-desktop">
 						<br>
@@ -356,6 +368,7 @@ $(document).ready(function() {
 						<p class="subtitle is-5">Princeton Club<br>26, Prince Anwar Shah Rd,<br>Kolkata, West Bengal</p>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</section>
@@ -385,7 +398,6 @@ $(document).ready(function() {
 		</div>
 	</section>
 	<section class="hero is-info is-bold is-fullheight" id="rsvp" style="position: relative;">
-		<div id="particles" style="position: absolute; width: 100%; height: 100%; z-index: 0; max-height: 100vh;"></div>
 		<div class="hero-body">
 			<div class="container has-text-centered">
 				<h1 class="title is-1" style="font-family: 'Satisfy', cursive; font-size: 5rem;">
@@ -395,13 +407,19 @@ $(document).ready(function() {
 				<div class="columns is-centered">
 					<div class="column is-10 is-8-desktop">
 						<p class="subtitle is-5">Our time has finally come, let us know if you will be able to join our celebration!</p>
-						<p><a href="mailto:riteshgajare@gmail.com?subject=Wedding RSVP" class="button heartbeathover is-large is-danger">Let us know</a></p>
+						<p><a href="mailto:riteshgajare@gmail.com?subject=Wedding RSVP" class="button heartbeathover is-large is-danger">Yes, I am in</a></p>
 						<br><br>
 						<span class="icon is-medium" style="opacity: 0.2">
 							<svg class="fa icon-diamond"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-diamond"></use></svg>
 						</span>
 					</div>
 				</div>
+			</div>
+		</div>
+		<section class="hero is-info is-bold" id="love" style="position: relative;">
+		<!-- Hero footer: will stick at the bottom -->
+		<div class="hero-body"><div class="container has-text-centered">
+			<p class="subtitle is-5 has-text-centered">Crafted by Ritesh with lots of <span class="fa fa-heart heart-main"></span> for Tamalika</br></p>
 			</div>
 		</div>
 	</section>
