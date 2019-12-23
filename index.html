@@ -218,7 +218,7 @@ $(document).ready(function() {
 	particlesJS("particles", {
 		"particles": {
 			"number": {
-				"value": 160,
+				"value": 260,
 				"density": {
 					"enable": true,
 					"value_area": 800
@@ -284,7 +284,7 @@ $(document).ready(function() {
 });
 </script>
 </head>
-<body>
+<bodßy>
 	<section class="hero is-dark" style="position: fixed; top: 0; width: 100%; z-index: 20; background: none;">
 		<!-- Hero header: will stick at the top -->
 		<div class="hero-head">
@@ -312,8 +312,8 @@ $(document).ready(function() {
 						<a href="#gallery" class="nav-item">
 						Gallery
 						</a>
-						<a href="#rsvp" class="nav-item">
-						RSVP
+						<a href="#video" class="nav-item">
+						Sand Animation
 						</a>
 					</div>
 				</div>
@@ -377,10 +377,20 @@ $(document).ready(function() {
 						<p class="subtitle is-5">Princeton Club<br>26, Prince Anwar Shah Rd,<br>Kolkata, West Bengal</p>
 					</div>
 				</div>
-				
+				<br><br>
+				<div class="columns is-centered">
+					<p class="subtitle is-5">Let us know if you will be able to join our celebration!</br></p>
+				</div>
+				<div class="columns is-centered">
+					<div class="column is-5 is-7-desktop">
+						<p><a href="mailto:riteshgajare@gmail.com?subject=Wedding RSVP" class="button heartbeathover is-large is-danger">RSVP</a></p>
+						<br><br>
+					</div>
+				</div>	
 			</div>
 		</div>
 	</section>
+
 	<section class="hero is-black is-bold is-fullheight" id="location" style="position: relative;">
 		<iframe src="https://maps.google.com/maps?q=princeton%20Club%20kolkata&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" width="100%" height="100%" style="border:0; pointer-events: none; height: 100%; position: absolute; top:0; bottom:0;left:0;right:0;" allowfullscreen></iframe>
 	</section>
@@ -406,25 +416,21 @@ $(document).ready(function() {
 			</div>
 		</div>
 	</section>
-	<section class="hero is-info is-bold is-fullheight" id="rsvp" style="position: relative;">
-		<div class="hero-body">
+	<section class="hero is-black is-fullheight" id="video" style="position: relative;">
+		<div class="hero-body">	
 			<div class="container has-text-centered">
-				<h1 class="title is-1" style="font-family: 'Satisfy', cursive; font-size: 5rem;">
-					RSVP
+				<h1 class="subtitle is-7" style="font-family: 'Satisfy', cursive; font-size: 3rem;">
+						Special thanks for my sister, Saylee </br> for making this up :)
 				</h1>
-				<br>
-				<div class="columns is-centered">
-					<div class="column is-10 is-8-desktop">
-						<p class="subtitle is-5">Our time has finally come, let us know if you will be able to join our celebration!</p>
-						<p><a href="mailto:riteshgajare@gmail.com?subject=Wedding RSVP" class="button heartbeathover is-large is-danger">Yes, I am in</a></p>
-						<br><br>
-						<span class="icon is-medium" style="opacity: 0.2">
-							<svg class="fa icon-diamond"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-diamond"></use></svg>
-						</span>
-					</div>
-				</div>
+						<!-- <youtube :video-id="video1"></youtube> -->
+				<!-- iframe width="450" height="315"  style="max-height: unset" src="https://www.youtube.com/embed/9giqL1H6yRs" allowfullscreen></iframe -->
+				<video width="70%" height="70%" playsinline autoplay loop>
+						<source src="wedding.mp4" type="video/mp4">
+				</video>
 			</div>
 		</div>
+		</section>
+	<section class="hero is-info is-bold" id="rsvp" style="position: relative;">
 		<section class="hero is-info is-bold" id="love" style="position: relative;">
 		<!-- Hero footer: will stick at the bottom -->
 		<div class="hero-body"><div class="container has-text-centered">
