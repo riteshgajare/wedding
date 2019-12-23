@@ -44,7 +44,7 @@ body {
 .content {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -178,7 +178,7 @@ section {
 </style>
 <script>
 $(document).ready(function() {
-	$(".countdown").countdown({until: new Date("Mar 17 2018 16:00:00 +1100"), compact: true}).show().before("(").after(")");
+	$(".countdown").countdown({until: new Date("Jan 20 2020 16:00:00 +1100"), compact: true}).show().before("(").after(")");
 
 	$("#location").click(function() {
 		$("#location iframe").css("pointer-events", "auto");
@@ -308,7 +308,7 @@ $(document).ready(function() {
 			</header>
 		</div>
 	</section>
-	<section class="hero is-dark is-fullheight video" style="position: relative;">
+	<section class="hero is-dark video" style="position: relative;">
 		<!-- Hero content: will be in the middle -->
 		<video autoplay muted loop id="myVideo">
 				<source src="wedding.mp4" type="video/mp4">
@@ -349,7 +349,7 @@ $(document).ready(function() {
 						<h2 class="subtitle is-3" style="font-family: 'Satisfy', cursive; font-size: 3.33rem;">
 							when
 						</h2>
-						<p class="subtitle is-5">20th January 2020<br>Ceremony begins 5pm<br><span class="countdown" style="display: none;"></span></p>
+						<p class="subtitle is-5">20th January 2020<br>Ceremony begins 5PM<br><span class="countdown" style="display: none;"></span></p>
 					</div>
 					<div class="column is-5 is-4-desktop">
 						<br>
