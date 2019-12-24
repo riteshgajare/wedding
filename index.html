@@ -51,6 +51,9 @@
   }
 }
 
+.hidden {
+  display: none;
+}
 
 .content {
   position: fixed;
@@ -312,7 +315,7 @@ $(document).ready(function() {
 						<a href="#celebrate" class="nav-item">
 						Celebrate
 						</a>
-						<a href="#gallery" class="nav-item">
+						<a href="#gallery" class="nav-item hidden">
 						Gallery
 						</a>
 						<a href="#video" class="nav-item">
@@ -434,7 +437,7 @@ $(document).ready(function() {
 				</div>
 			</div>
 		</section>
-	<section class="hero is-fullheight" id="gallery" style="background: none;"></section>
+	<section class="hero is-fullheight hidden" id="gallery" style="background: none;"></section>
 	<section class="hero is-black is-bold is-fullheight" style="position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 1;">
 		<div class="slider-container">
 			<div class="slider">
